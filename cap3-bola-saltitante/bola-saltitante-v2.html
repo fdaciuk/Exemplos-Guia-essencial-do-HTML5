@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Bola Saltitante - V1</title>
+
+	<style>
+		form {
+			background-color: brown;
+			margin: 20px;
+			padding: 20px;
+			width: 330px;
+		}
+	</style>
+
+	<script src="bola-saltitante-v1.js"></script>
+</head>
+<body onload="init();">
+	<canvas id="canvas" width="400" height="300">
+		Seu navegador não suporta canvas da HTML5.
+	</canvas>
+
+	<br />
+
+	<form name="f" id="f" onsubmit="return change();">
+		Horizontal velocity: <input type="number" name="hv" id="hv" value="4" min="-10" max="10" /><br />
+		Vertical velocity: <input type="number" name="vv" id="vv" value="8" min="-10" max="10" /><br />
+		<input type="submit" value="CHANGE" />
+	</form>
+</body>
+</html>
